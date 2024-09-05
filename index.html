@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Website Title</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDF010G6PN');
+  </script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/zcswdt">
+            SeqSpatialFold
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container has-text-centered">
+		<h1 class="title is-1 publication-title">
+		  SeqSpatialFold:Learning to Fold Arbitrary Crumpled<br/>
+		   Cloth Using Graph Dynamics from Human Demonstration
+		</h1>
+        <div class="is-size-5 publication-authors">
+          <div class="author-block">
+            <div class="author-portrait">
+              <img src="./static/figures/zhou.jpg" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+            </div>
+			<a href="https://github.com/zcswdt">ChangShi Zhou</a>
+          </div>
+          <div class="author-block">
+            <div class="author-portrait">
+              <img src="./static/figures/xu.jpg" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+            </div>
+            Haichuan Xu
+          </div>
+		  <div class="author-block">
+		    <div class="author-portrait">
+		      <img src="./static/figures/hu.jpg" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+		    </div>
+		    Jiarui Hu
+		  </div>
+		  <div class="author-block">
+		    <div class="author-portrait">
+		      <img src="./static/figures/luan.jpg" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+		    </div>
+		    Feng Luan
+		  </div>
+		  
+		  
+		  
+          <div class="author-block">
+            <div class="author-portrait">
+              <img src="./static/figures/wang.png" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+            </div>
+            Zhipeng Wang
+          </div>
+          <div class="author-block">
+            <div class="author-portrait">
+              <img src="./static/figures/dong.png" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+            </div>
+            Yanchao Dong
+          </div>
+          <div class="author-block">
+            <div class="author-portrait">
+              <img src="./static/figures/zhouyanmin.jpg" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+            </div>
+            Yanmin Zhou
+          </div>
+          <div class="author-block">
+            <div class="author-portrait">
+              <img src="./static/figures/hebing.jpg" class="rgb preload" style="border-radius: 0; object-fit: contain;" />
+            </div>
+            Bin He
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <span class="link-block">
+                <a href="https://github.com/zcswdt"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            <span class="link-block">
+                <a href="https://github.com/zcswdt"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+            </span>
+            <span class="link-block">
+              <a href="https://github.com/zcswdt"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code(coming Soon)</span>
+                </a>
+            </span>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Robotic cloth manipulation faces challenges due to
+            complex dynamics and the high dimensionality of configuration
+            spaces. Previous methods have largely focused on isolated
+            smoothing or folding tasks and heavily relied on simulations,
+            often failing to bridge the significant sim-to-real gap in
+            deformable object manipulation.
+          </p>
+          <p>
+
+			To overcome these challenges, 
+			we propose a two-stream architecture with sequential and spatial pathways,
+			 unifying smoothing and folding tasks into a single adaptable policy model 
+			 that accommodates various cloth types and states. The sequential stream 
+			 determines cloth pick and place positions, while the spatial stream, 
+			 leveraging a visible connectivity dynamics model, constructs a 
+			 visibility connectivity graph from partial point cloud data of
+			  self-occluded cloth, thus improving the robot’s perception of
+			   the cloth’s current state. To bridge the sim-to-real gap, 
+			   we utilize a hand tracking detection algorithm to gather 
+			   and integrate human demonstration data into our novel 
+			   end-to-end neural network, improving real-world adaptability. Our method, 
+			   validated on a UR5 robot across four distinct cloth folding tasks, 
+			   reliably achieves folded states from crumpled initial configurations 
+			   with success rates of 99%, 99%, 83%, and 67%. It outperforms existing
+				state-of-the-art cloth manipulation techniques and demonstrates 
+				strong generalization to unseen cloth with diverse colors, shapes,
+				 and stiffness in real-world experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+<hr/>
+
+
+<div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3">Approach Overview</h2>
+
+      <div class="has-text-centered">
+        <img style="width: 100%;" src="./static/images/fig2.png"
+             alt="HyperNeRF architecture."/>
+      </div>
+	  <p>
+		Fig. 1. Method overview. (a) In a workspace equipped with a UR5 robotic arm and a piece of cloth in an arbitrary crumpled configuration, a top-down RGB image is captured by the camera. (b) The pick point, identified using a YOLOv10-based hand tracking algorithm, is concatenated with the captured RGB image. This combined input is then fed into the U-net network within the Sequential Stream. (c) In the Spatial Stream, the infrared and depth images captured by the camera are first used to extract a mask of the cloth region and generate the corresponding point cloud. The point cloud is voxelized to reduce complexity, followed by inferring nearby edges and mesh edges to predict the cloth’s graph data. (d) Finally, the features from both streams are fused and processed to produce an output action map, which guides the robotic arm to execute the corresponding actions using parameterized action primitives.
+	  </p>
+    </div>
+  </div>
+</section>
+
+
+<hr/>
+
+
+<div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3">Sequential demonstration of folding arbitrary crumpled cloth across three distinct tasks</h2>
+
+      <div class="has-text-centered">
+        <img style="width: 100%;" src="./static/images/fig8.png"
+             alt="HyperNeRF architecture."/>
+      </div>
+	  <p>
+Fig. 2. Each task consists of two rows: the first row presents the top-view operation sequence captured by the overhead camera, while the second row displays the side-view operation sequence captured by the side camera. Q<sub>pick</sub> represents the predicted pick heatmap, Q<sub>place</sub> represents the predicted place heatmap, PA represents the predicted action map, and a<sub>t</sub> represents the action pair. 
+	  </p>
+    </div>
+  </div>
+</section>
+
+
+<hr/>
+
+
+<section class="hero teaser">
+  <div class="hero-body" style="background-color: #AAB6FE; padding: 20px 0;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3" style="color: #FFFFFF; text-align: left; margin: 0;">Real World Experiments</h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+	  <div style="height: 20px;"></div> <!-- 间隔 -->
+	  <h3 class="subtitle is-4">一. Performance on Double Inward Fold <span style="font-weight: bold; color: red;">(DIF)</span> tasks across towels of varying difficulty</h3> <!-- 新添加的子标题 -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <!-- 第一列视频，添加右侧间隔 -->
+        <div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 2%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/fold/p2.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">easy task</h3>
+        </div>
+        <!-- 第二列视频 -->
+        <div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 2%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/fold/p1.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">medium task</h3>
+        </div>
+        <!-- 第三列视频 -->
+        <div style="flex: 1 1 30%; margin-bottom: 20px;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/fold/p3.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">hard task</h3>
+        </div>
+		
+		<!-- 添加子标题 -->
+		<div style="width: 100%; margin-bottom: 20px;">
+		    <h3 class="subtitle is-4">二. Performance on Double Triangle Fold <span style="font-weight: bold; color: red;">(DTF)</span> tasks across towels of varying difficulty</h3>
+		</div>
+		
+		
+        <!-- 第一列的其他视频 -->
+        <div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 2%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/fold/tri3.mp4" type="video/mp4">
+          </video>
+		  <h3 class="has-text-centered">easy task</h3>
+        </div>
+        <!-- 第二列的其他视频 -->
+        <div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 2%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/fold/tri2.mp4" type="video/mp4">
+          </video>
+		  <h3 class="has-text-centered">medium task</h3>
+        </div>
+		<!-- 第三列视频 -->
+		<div style="flex: 1 1 30%; margin-bottom: 20px;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/fold/tri1.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">hard task</h3>
+		</div>
+		
+		<!-- 添加子标题 -->
+		<div style="width: 100%; margin-bottom: 20px;">
+			<h3 class="subtitle is-4">三. Performance on Four Corners Inward Fold <span style="font-weight: bold; color: red;">(FCIF)</span> tasks across towels of varying difficulty</h3>
+		</div>
+		
+		
+		<!-- 第一列视频，添加右侧间隔 -->
+		<div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 2%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+			<source src="./static/videos/fold/corner1.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">easy task</h3>
+		</div>
+		<!-- 第二列视频 -->
+		<div style="flex: 1 1 30%; margin-bottom: 20px; margin-right: 2%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+			<source src="./static/videos/fold/corner2.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">medium task</h3>
+		</div>
+		<!-- 第三列视频 -->
+		<div style="flex: 1 1 30%; margin-bottom: 20px;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+			<source src="./static/videos/fold/corner3.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">hard task</h3>
+		</div>
+	
+	
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero teaser">
+  <div class="hero-body" style="background-color: #AAB6FE; padding: 20px 0;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3" style="color: #FFFFFF; text-align: left; margin: 0;">Generalization to Unseen Cloth</h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="hero-body" style="background-color: #e0e0e0;">
+    <div class="container is-max-desktop">
+      <!-- 添加子标题 -->
+      <div style="width: 100%; margin-bottom: 20px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- 添加子标题 -->
+      <div style="width: 100%; margin-bottom: 20px;">
+          <h3 class="subtitle is-4">一.Performance on Double Inward Fold<span style="font-weight: bold; color: red;"> (DIF)</span>  tasks across unseen towels</h3>
+      </div>
+	  
+	  
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+		<!-- 第一行视频 --> 
+        <div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/generalization/px1.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">Towel1</h3>
+        </div>
+        <div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/generalization/px2.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">Towel2</h3>
+        </div>
+        <div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/generalization/px3.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">Towel3</h3>
+        </div>
+        <div style="flex: 1 1 23%; margin-bottom: 20px;">
+          <video autoplay controls muted loop playsinline style="width: 100%;">
+            <source src="./static/videos/generalization/px4.mp4" type="video/mp4">
+          </video>
+          <h3 class="has-text-centered">Towel4</h3>
+        </div>
+		
+		
+		<!-- 添加子标题 -->
+		<div style="width: 100%; margin-bottom: 20px;">
+		    <h3 class="subtitle is-4">一.Performance on Double Triangle Fold <span style="font-weight: bold; color: red;">(DTF)</span>  tasks across unseen towels</h3>
+		</div>
+		<!-- 第二行视频 -->
+		
+		<div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/tri1.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel1</h3>
+		</div>
+		<div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/tri2.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel2</h3>
+		</div>
+		<div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/tri3.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel3</h3>
+		</div>
+		<div style="flex: 1 1 23%; margin-bottom: 20px;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/tri4.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel4</h3>
+		</div>
+		
+		<!-- 添加子标题 -->
+		<div style="width: 100%; margin-bottom: 20px;">
+		    <h3 class="subtitle is-4">一.Performance on Four Corners Inward Fold <span style="font-weight: bold; color: red;">(FCIF)</span>  tasks across unseen towels</h3>
+		</div>
+		<!-- 第一行视频 -->
+		<div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/cor1.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel1</h3>
+		</div>
+		<div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/cor2.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel2</h3>
+		</div>
+		<div style="flex: 1 1 23%; margin-bottom: 20px; margin-right: 1%;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/cor3.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel3</h3>
+		</div>
+		<div style="flex: 1 1 23%; margin-bottom: 20px;">
+		  <video autoplay controls muted loop playsinline style="width: 100%;">
+		    <source src="./static/videos/generalization/cor4.mp4" type="video/mp4">
+		  </video>
+		  <h3 class="has-text-centered">Towel4</h3>
+		</div>
+		
+		
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<hr/>
+
+<section class="section" id="BibTeX">
+  <div class="container content is-max-desktop">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2024,
+  author = {Changshi Zhou, Haichuan Xu, Zhipeng Wang, Yanchao Dong, Yanmin Zhou,  Bin He},
+  month = {dec},
+  year = {2024},
+  articleno = {238},
+}</code></pre>
+  </div>
+</section>
+
+
+
+<section class="footer">
+  <div class="container content is-max-desktop" style="padding: 20px;">
+    <div style="text-align: left;">
+      If you have any questions, please feel free to contact 
+      <a href="mailto:jhsignal@126.com">jhsignal@126.com</a>.
+    </div>
+  </div>
+</section>
+
+
+
+
+<script type="text/javascript" src="./static/slick/slick.min.js"></script>
+</body>
+</html>
